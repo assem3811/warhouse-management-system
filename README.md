@@ -2,5 +2,4 @@
 
 #ER Diagram
 
-![This is an image](C:\Users\asalama\OneDrive - Brightskies Inc\OfficeMobile\Scan 08 Feb 23 13·57·38/OM_1675857465123.jpg)
-
+![OM_1675857465123](https://user-images.githubusercontent.com/40776283/219941048-cc7d7d4f-ced1-4773-8af1-b4e365e6c05a.jpeg)
