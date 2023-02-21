@@ -2,7 +2,7 @@ package com.example.warehouseManager.Controller;
 
 
 import com.example.warehouseManager.Model.StorageLocation;
-import com.example.warehouseManager.Service.StorageLocationService;
+import com.example.warehouseManager.Service.impl.StorageLocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -2,7 +2,7 @@ package com.example.warehouseManager.Controller;
 
 
 import com.example.warehouseManager.Model.Customer;
-import com.example.warehouseManager.Service.CustomerService;
+import com.example.warehouseManager.Service.impl.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.example.warehouseManager.Service;
+package com.example.warehouseManager.Service.impl;
 
 import com.example.warehouseManager.Model.Customer;
 import com.example.warehouseManager.Repository.CustomerRepository;
@@ -26,6 +26,10 @@ public class CustomerService {
 
     public void addNewCustomer(Customer customer) {
         customerRepository.save(customer);
+    }
+
+    public void save(M model) {
+        baseRepository<M>.save(model);
     }
 
     public void updateCustomerDetails(
