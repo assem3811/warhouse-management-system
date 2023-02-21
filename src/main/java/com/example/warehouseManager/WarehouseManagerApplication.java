@@ -1,5 +1,6 @@
 package com.example.warehouseManager;
 
+import com.example.warehouseManager.Model.Customer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ public class WarehouseManagerApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(WarehouseManagerApplication.class, args);
+
 	}
 
 }
