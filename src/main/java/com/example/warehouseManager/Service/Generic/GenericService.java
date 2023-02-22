@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@Service
+
 public interface GenericService<T> {
 
     List<T> findAll() throws Exception;

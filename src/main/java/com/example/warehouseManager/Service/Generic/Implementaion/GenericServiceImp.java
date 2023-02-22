@@ -1,15 +1,13 @@
 package com.example.warehouseManager.Service.Generic.Implementaion;
 
-import com.example.warehouseManager.Repository.Generic.GenericRepository;
+import com.example.warehouseManager.Repository.GenericRepository;
 import com.example.warehouseManager.Service.Generic.GenericService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 
-@Service
 public class GenericServiceImp<T> implements GenericService<T> {
 
     @Autowired

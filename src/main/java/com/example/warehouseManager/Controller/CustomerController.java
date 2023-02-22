@@ -1,5 +1,6 @@
 package com.example.warehouseManager.Controller;
 
+import com.example.warehouseManager.Controller.Generic.GenericController;
 import com.example.warehouseManager.Model.Customer;
 import com.example.warehouseManager.Service.CustomerService;
 import com.example.warehouseManager.Service.Generic.GenericService;
@@ -10,21 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/customer")
-public class CustomerController<T> {
+public class CustomerController extends GenericController<Customer> {
 
-    @Autowired
-    private final CustomerService customerService;
-
-    public CustomerController(CustomerService customerService) {
-        this.customerService = customerService;
-    }
-
-    @GetMapping
-    public List<Customer> getAllCustomers() {
-        try {
-            return customerService.findAll();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 }

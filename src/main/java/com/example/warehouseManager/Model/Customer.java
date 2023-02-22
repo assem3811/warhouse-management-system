@@ -3,26 +3,22 @@ package com.example.warehouseManager.Model;
 import com.example.warehouseManager.Model.Generic.GenericEntity;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "customers")
-@Setter
-@Getter
-@AllArgsConstructor
-@NoArgsConstructor
-public class Customer extends GenericEntity<Customer> {
+@Table(name = "customer")
+@Data
+public class Customer extends GenericEntity {
+
 
     @Column(nullable = false)
     private String name;
 
-//    @JsonManagedReference(value = "customer")
-//    @OneToMany(mappedBy = "customer")
-//    List<Order> orders;
+    @JsonManagedReference(value = "customer")
+    @OneToMany(mappedBy = "customer")
+    List<Order> orders;
 }
