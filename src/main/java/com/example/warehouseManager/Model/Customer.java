@@ -22,7 +22,7 @@ public class Customer extends GenericEntity<Customer> {
     @Column(nullable = false)
     private String name;
 
-    @JsonManagedReference(value = "customer")
-    @OneToMany(mappedBy = "customer")
-    List<Order> orders;
+//    @JsonManagedReference(value = "customer")
+//    @OneToMany(mappedBy = "customer")
+//    List<Order> orders;
 }

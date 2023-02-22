@@ -9,10 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 
+@Service
 public class GenericServiceImp<T> implements GenericService<T> {
 
     @Autowired
-    private GenericRepository<T> genericRepository;
+    private GenericRepository genericRepository;
 
     @Override
     public List<T> findAll() throws Exception {
