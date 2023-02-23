@@ -1,6 +1,6 @@
-package com.example.warehouseManager.Controller.Generic;
+package com.example.warehouseManager.Controller;
 
-import com.example.warehouseManager.Model.Generic.GenericEntity;
+import com.example.warehouseManager.Model.GenericEntity;
 import com.example.warehouseManager.Service.GenericService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

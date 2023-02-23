@@ -1,6 +1,6 @@
 package com.example.warehouseManager.Service.Implementaion;
 
-import com.example.warehouseManager.Model.Generic.GenericEntity;
+import com.example.warehouseManager.Model.GenericEntity;
 import com.example.warehouseManager.Repository.GenericRepository;
 import com.example.warehouseManager.Service.GenericService;
 import org.springframework.beans.factory.annotation.Autowired;

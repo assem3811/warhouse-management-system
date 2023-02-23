@@ -1,16 +1,12 @@
 package com.example.warehouseManager.Model;
 
 
-import com.example.warehouseManager.Model.Generic.GenericEntity;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import jdk.jfr.DataAmount;
 import lombok.*;
 
-import java.io.Serializable;
 import java.util.Date;
-import java.util.Objects;
 
 
 enum type {single, dozen}

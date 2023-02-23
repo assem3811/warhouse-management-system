@@ -1,7 +1,6 @@
 package com.example.warehouseManager.Controller;
 
 
-import com.example.warehouseManager.Controller.Generic.GenericController;
 import com.example.warehouseManager.Model.SKU;
 import org.springframework.web.bind.annotation.*;
 

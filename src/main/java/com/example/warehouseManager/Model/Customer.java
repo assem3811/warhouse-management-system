@@ -1,13 +1,10 @@
 package com.example.warehouseManager.Model;
 
-import com.example.warehouseManager.Model.Generic.GenericEntity;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.io.Serializable;
 import java.util.List;
-import java.util.Objects;
 
 @Entity
 @Table(name = "customer")

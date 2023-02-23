@@ -1,4 +1,4 @@
-package com.example.warehouseManager.Model.Generic;
+package com.example.warehouseManager.Model;
 
 import jakarta.persistence.*;
 import lombok.*;
