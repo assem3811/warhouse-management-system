@@ -1,4 +1,4 @@
-package com.example.warehouseManager.Service.Generic.Implementaion;
+package com.example.warehouseManager.Service.Implementaion;
 
 import com.example.warehouseManager.Model.Order;
 import com.example.warehouseManager.Service.OrderService;

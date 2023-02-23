@@ -1,4 +1,4 @@
-package com.example.warehouseManager.Service.Generic;
+package com.example.warehouseManager.Service;
 
 import org.springframework.stereotype.Service;
 import java.util.List;

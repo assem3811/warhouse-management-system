@@ -1,17 +1,17 @@
-package com.example.warehouseManager.Service.Generic.Implementaion;
+package com.example.warehouseManager.Service.Implementaion;
 
+import com.example.warehouseManager.Model.Generic.GenericEntity;
 import com.example.warehouseManager.Repository.GenericRepository;
-import com.example.warehouseManager.Service.Generic.GenericService;
+import com.example.warehouseManager.Service.GenericService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 
-public class GenericServiceImp<T> implements GenericService<T> {
+public class GenericServiceImp<T extends GenericEntity> implements GenericService<T> {
 
     @Autowired
-    private GenericRepository genericRepository;
+    private GenericRepository<T> genericRepository;
 
     @Override
     public List<T> findAll() throws Exception {

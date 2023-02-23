@@ -11,7 +11,10 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "customer")
-@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Customer extends GenericEntity {
 
 
