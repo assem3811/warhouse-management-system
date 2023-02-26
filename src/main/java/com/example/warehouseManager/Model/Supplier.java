@@ -9,7 +9,10 @@ import java.util.List;
 
 @Entity
 @Table(name = "suppliers")
-@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Supplier extends GenericEntity {
 
     @Column(nullable = false)

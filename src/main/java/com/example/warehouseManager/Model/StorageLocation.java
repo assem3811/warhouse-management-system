@@ -6,8 +6,11 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "storage_location")
-@Data
+@Table(name = "storage_locations")
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class StorageLocation extends GenericEntity {
 
 

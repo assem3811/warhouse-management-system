@@ -13,7 +13,10 @@ enum type {single, dozen}
 enum orientation {horizontal, vertical}
 @Entity
 @Table(name = "storage_keeping_units")
-@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class SKU extends GenericEntity {
 
 
@@ -26,8 +29,8 @@ public class SKU extends GenericEntity {
     private type skuType;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "sku_orientaion")
-    private orientation skuOrientaion;
+    @Column(name = "sku_orientation")
+    private orientation skuOrientation;
 
     @Column(nullable = false)
     private double capacity;
@@ -44,7 +47,7 @@ public class SKU extends GenericEntity {
     @JoinColumn(name = "supplier_id")
     private Supplier supplier;
 
-    @JsonManagedReference(value = "order")
+    @JsonBackReference("order")
     @ManyToOne
     @JoinColumn(name = "order_id")
     private Order order;

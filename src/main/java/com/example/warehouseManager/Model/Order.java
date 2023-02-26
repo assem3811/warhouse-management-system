@@ -1,7 +1,6 @@
 package com.example.warehouseManager.Model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,7 +8,14 @@ import java.util.List;
 
 @Entity
 @Table(name = "orders")
-@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+//@JsonIdentityInfo(
+//        generator = ObjectIdGenerators.PropertyGenerator.class,
+//        property = "id"
+//)
 public class Order extends GenericEntity {
 
 

@@ -1,17 +1,21 @@
 package com.example.warehouseManager.Model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.List;
 
 @Entity
-@Table(name = "customer")
+@Table(name = "customers")
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+//@JsonIdentityInfo(
+//        generator = ObjectIdGenerators.PropertyGenerator.class,
+//        property = "id"
+//)
 public class Customer extends GenericEntity {
 
 
@@ -21,4 +25,5 @@ public class Customer extends GenericEntity {
     @JsonManagedReference(value = "customer")
     @OneToMany(mappedBy = "customer")
     List<Order> orders;
+
 }
