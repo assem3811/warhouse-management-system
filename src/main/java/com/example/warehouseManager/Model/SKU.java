@@ -61,4 +61,6 @@ public class SKU extends GenericEntity {
     @Temporal(TemporalType.DATE)
     private Date admittanceDate;
 
+
+
 }
