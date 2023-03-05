@@ -47,10 +47,10 @@ public class SKU extends GenericEntity {
     @JoinColumn(name = "supplier_id")
     private Supplier supplier;
 
-    @JsonBackReference("order")
+    @JsonBackReference("orderItem")
     @ManyToOne
-    @JoinColumn(name = "order_id")
-    private Order order;
+    @JoinColumn(name = "order_item_id")
+    private OrderItem orderItem;
 
     @JsonManagedReference(value = "sku")
     @OneToOne

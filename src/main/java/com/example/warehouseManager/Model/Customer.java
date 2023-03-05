@@ -12,18 +12,25 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-//@JsonIdentityInfo(
-//        generator = ObjectIdGenerators.PropertyGenerator.class,
-//        property = "id"
-//)
 public class Customer extends GenericEntity {
 
 
     @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
+    private String email;
+
+    @Column(nullable = false)
+    private String phone;
+
+
     @JsonManagedReference(value = "customer")
     @OneToMany(mappedBy = "customer")
     List<Order> orders;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    private Address address;
 
 }

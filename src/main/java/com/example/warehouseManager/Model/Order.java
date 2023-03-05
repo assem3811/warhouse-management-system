@@ -26,5 +26,6 @@ public class Order extends GenericEntity {
 
     @JsonManagedReference(value = "order")
     @OneToMany(mappedBy = "order")
-    private List<SKU> skus;
+    private List<OrderItem> orderItems;
+
 }
