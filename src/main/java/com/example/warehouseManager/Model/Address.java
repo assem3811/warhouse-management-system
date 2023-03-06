@@ -9,6 +9,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "addresses")
@@ -32,4 +36,5 @@ public class Address extends GenericEntity{
 
     @OneToOne(mappedBy = "address")
     private Customer customer;
+
 }
