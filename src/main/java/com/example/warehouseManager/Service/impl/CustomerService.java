@@ -1,10 +1,8 @@
 package com.example.warehouseManager.Service.impl;
 
 import com.example.warehouseManager.Model.Customer;
-import com.example.warehouseManager.Repository.CustomerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
+<<<<<<< HEAD:src/main/java/com/example/warehouseManager/Service/impl/CustomerService.java
 @Service
 public class CustomerService {
 
@@ -48,5 +46,8 @@ public class CustomerService {
             customerRepository.deleteById(id);
         }
     }
+=======
+public interface CustomerService extends GenericService<Customer> {
+>>>>>>> first:src/main/java/com/example/warehouseManager/Service/CustomerService.java
 }
 

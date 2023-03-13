@@ -2,35 +2,15 @@ package com.example.warehouseManager.Controller;
 
 
 import com.example.warehouseManager.Model.SKU;
+<<<<<<< HEAD
 import com.example.warehouseManager.Service.impl.SKUService;
 import org.springframework.beans.factory.annotation.Autowired;
+=======
+>>>>>>> first
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/v1/sku")
-public class SKUController {
+public class SKUController extends GenericController<SKU> {
 
-    @Autowired
-    private final SKUService skuService;
-
-    public SKUController(SKUService skuService) {
-        this.skuService = skuService;
-    }
-
-    @GetMapping
-    public List<SKU> getAllSKUs() {
-        return skuService.listAllSKUs();
-    }
-
-    @GetMapping("{SKUId}")
-    public SKU getSKUById(@PathVariable("SKUId") Long id) {
-        return skuService.getSKUById(id);
-    }
-
-    @PostMapping
-    public void addNewSKU(@RequestBody SKU sku) {
-        skuService.addNewSKU(sku);
-    }
 }
